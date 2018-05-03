@@ -1,14 +1,16 @@
+.list {
+  display: flex;
+  justify-content: center;
+}
 .question-card {
     max-width: 400px;
+    background: #005952;
+    margin-top: 10px;
+    color: white;
   }
 
-  .example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
+  .mat-raised-button {
+    background: #adadad;
   }
   
-  .example-full-width {
-    width: 100%;
-  }
-  
+

@@ -1,0 +1,8 @@
+.question-list {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+.questions {
+    margin: 35px;
+}

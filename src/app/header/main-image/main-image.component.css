@@ -1,0 +1,10 @@
+.image {
+    background: url(../../../assets/brainWork.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: 0px;
+    height: 500px;
+}
+
