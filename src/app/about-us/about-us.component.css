@@ -1,0 +1,23 @@
+.content {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.display-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    background: url(../../assets/aboutUs.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 600px;
+
+}

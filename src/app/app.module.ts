@@ -19,6 +19,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 
@@ -31,7 +32,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     HeaderComponent,
     MainImageComponent,
     FooterComponent,
-    AnswerComponent
+    AnswerComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

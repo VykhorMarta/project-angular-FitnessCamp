@@ -3,7 +3,7 @@
     height: 80px;
     margin: 0px;
     /* background:#808FA2; */
-    opacity: 1;
+    opacity: 0.9;
     position:fixed;
     z-index: 100;
 }
