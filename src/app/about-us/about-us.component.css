@@ -18,6 +18,9 @@
     background: url(../../assets/aboutUs.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 600px;
+    width: 40%;
 
+}
+.blockquote{
+    width: 60%;
 }
