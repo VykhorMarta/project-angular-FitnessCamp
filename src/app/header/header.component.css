@@ -8,6 +8,7 @@
     z-index: 100;
 }
 
+
 /* bootstrap */
 .navbar-default {
     border-radius: 0%;
@@ -78,3 +79,14 @@
           color: #333;
     }
 }
+/* 
+.image {
+  
+    background: url(../../assets/sport.jpg);
+    height: 50%;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+} */
+
