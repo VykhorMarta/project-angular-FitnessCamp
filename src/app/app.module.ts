@@ -5,13 +5,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-import { ListQuestionsComponent } from './list-questions/list-questions.component';
-import { QuestionComponent } from './list-questions/question/question.component';
 import { QuestionService } from './services/question.service';
 import { HeaderComponent } from './header/header.component';
 import { MainImageComponent } from './header/main-image/main-image.component';
 import { FooterComponent } from './footer/footer.component';
-import { AnswerComponent } from './list-questions/answer/answer.component';
 
 
 import {MatCardModule} from '@angular/material/card';
@@ -20,6 +17,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { LocationComponent } from './location/location.component';
+import { PriceComponent } from './price/price.component';
 
 
 
@@ -27,13 +26,12 @@ import { AboutUsComponent } from './about-us/about-us.component';
   declarations: [
     AppComponent,
     MainComponent,
-    ListQuestionsComponent,
-    QuestionComponent,
     HeaderComponent,
     MainImageComponent,
     FooterComponent,
-    AnswerComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    LocationComponent,
+    PriceComponent
   ],
   imports: [
     BrowserModule,
