@@ -1,4 +1,8 @@
 .carousel-item{
     margin-top: 25px;
+    margin-bottom: 80px;
 }
 
+p{
+    font-size: 18px;
+}

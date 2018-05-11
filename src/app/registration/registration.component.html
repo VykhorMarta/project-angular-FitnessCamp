@@ -1,0 +1,50 @@
+<div class="flex-container">
+    <form class="example-form">
+    <h1 >Join our team now!</h1>
+      <table class="example-full-width" cellspacing="0"><tr>
+        <td><mat-form-field class="example-full-width">
+          <input matInput placeholder="First name" [(ngModel)] = "user.firstName">
+        </mat-form-field></td>
+        <td><mat-form-field class="example-full-width">
+          <input matInput placeholder="Last Name" [(ngModel)] = "user.lastName">
+        </mat-form-field></td>
+      </tr></table>
+    
+      <p>
+        <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Email" [(ngModel)] = "user.email"></textarea>
+        </mat-form-field>
+      </p>
+    
+      <table class="example-full-width" cellspacing="0"><tr>
+        <td><mat-form-field class="example-full-width">
+          <input matInput placeholder="Age" [(ngModel)] = "user.age">
+        </mat-form-field></td>
+      </tr></table>
+    
+      <table class="example-full-width" cellspacing="0"><tr>
+        <td><mat-form-field class="example-full-width">
+          <input matInput placeholder="City" [(ngModel)] = "user.city">
+        </mat-form-field></td>
+        <td><mat-form-field class="example-full-width">
+          <input matInput placeholder="Country" [(ngModel)] = "user.country">
+        </mat-form-field></td>
+    
+    
+      
+      </tr></table>
+      <p>
+          <mat-form-field class="example-full-width">
+              <mat-select placeholder="Choose country">
+                <mat-option *ngFor="let food of foods" [value]="food.value">
+                  {{ food.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </p>
+
+      <!-- <button type="button" class="btn btn-light" (click)="onClickMe()">Join our team</button> -->
+
+    </form>
+    
+    </div>

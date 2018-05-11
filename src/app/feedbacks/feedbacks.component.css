@@ -1,0 +1,29 @@
+.content {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+   }
+
+.blocks{
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+}
+
+.image {
+    width: 40%;
+
+}
+img{
+    width: 100%;
+
+}
+.blockquote{
+    width: 60%;
+    margin: 20px; 
+}

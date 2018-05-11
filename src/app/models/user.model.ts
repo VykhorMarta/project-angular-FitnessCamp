@@ -1,16 +1,21 @@
 export class User {
     id: string;
-    name: string;
+    firstName: string;
     lastName: string; 
     email: string;
-    phoneNumber: string;
-    work: string;
+    age: number;
+    city: string;
+    country: string;
+    choose: string;
 
-    constructor(name, lastName, email, phoneNumber, work){
-        this.name = name;
+
+    constructor(firstName, lastName, email, age, city, country, choose){
+        this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.work = work;
+        this.age = age;
+        this.city = city;
+        this.country = country;
+        this.choose = choose;
     }
 }

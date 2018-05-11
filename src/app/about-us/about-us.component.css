@@ -3,11 +3,12 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .panel{
     margin-top: 60px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
