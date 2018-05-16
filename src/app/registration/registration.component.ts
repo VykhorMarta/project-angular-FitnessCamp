@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../models/user.model';
-import { Router } from '@angular/router';
 import { RegistrationService } from '../services/registrationService';
+import { FormControl } from '@angular/forms';
+import { Http } from '@angular/http';
+
 
 @Component({
   selector: 'app-registration',
@@ -11,32 +13,41 @@ import { RegistrationService } from '../services/registrationService';
 
 
 export class RegistrationComponent implements OnInit {
-  foods = [
-    {value: 'croatia-0', viewValue: 'Croatia'},
-    {value: 'italy-1', viewValue: 'Italy'},
-    {value: 'sweden-3', viewValue: 'Sweden'},
-    {value: 'cappadocia-4', viewValue: 'Cappadocia'},
-    {value: 'austria-5', viewValue: 'Austria'}
-  ];
-
-  user: User = new User('', '', '', '', '', '', '');
-  users: User [] = [];
-  constructor(private regservice: RegistrationService, private router: Router) { }
-
-  ngOnInit() {
+  // countries = [
+  //   {value: 'croatia-0', viewValue: 'Croatia'},
+  //   {value: 'italy-1', viewValue: 'Italy'},
+  //   {value: 'sweden-3', viewValue: 'Sweden'},
+  //   {value: 'cappadocia-4', viewValue: 'Cappadocia'},
+  //   {value: 'austria-5', viewValue: 'Austria'}
+  // ];
+  public onFormSubmit({ value, valid }: { value: User, valid: boolean }) {
+    this.user = value;
+    console.log(this.user);
+    console.log("valid: " + valid);
   }
 
-  signUp(){
-    this.regservice.signUpNewUser(this.user).subscribe(
+  
+  private countryToGo: string[];
+  private user: User;
+
+  constructor(private http: Http) { }
+
+  signUp() {
+    console.log(this.user)
+    this.http.post ('http://localhost:3000/reservation',this.user)
+    .subscribe(
       res => {
         console.log(res);
-      },
-      err => {
-        console.log('Some error')
       }
-    )
+    );
   }
-  
+
+  ngOnInit() {
+    this.countryToGo = ["Austria", "Cappadocia", "Sweden"];
+    this.user = new User('', '', '', '', '', '', this.countryToGo[0])
+    
+  }
+
 }
 
   

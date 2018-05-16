@@ -3,31 +3,31 @@
     <h1 >Join our team now!</h1>
       <table class="example-full-width" cellspacing="0"><tr>
         <td><mat-form-field class="example-full-width">
-          <input matInput placeholder="First name" [(ngModel)] = "user.firstName">
+          <input matInput placeholder="First name" [(ngModel)] = "user.firstName" name="firstName">
         </mat-form-field></td>
         <td><mat-form-field class="example-full-width">
-          <input matInput placeholder="Last Name" [(ngModel)] = "user.lastName">
+          <input matInput placeholder="Last Name" [(ngModel)] = "user.lastName" name="lastName">
         </mat-form-field></td>
       </tr></table>
     
       <p>
         <mat-form-field class="example-full-width">
-          <textarea matInput placeholder="Email" [(ngModel)] = "user.email"></textarea>
+          <textarea matInput placeholder="Email" [(ngModel)] = "user.email" name="email"></textarea>
         </mat-form-field>
       </p>
     
       <table class="example-full-width" cellspacing="0"><tr>
         <td><mat-form-field class="example-full-width">
-          <input matInput placeholder="Age" [(ngModel)] = "user.age">
+          <input matInput placeholder="Age" [(ngModel)] = "user.age" name="age">
         </mat-form-field></td>
       </tr></table>
     
       <table class="example-full-width" cellspacing="0"><tr>
         <td><mat-form-field class="example-full-width">
-          <input matInput placeholder="City" [(ngModel)] = "user.city">
+          <input matInput placeholder="City" [(ngModel)] = "user.city" name="city">
         </mat-form-field></td>
         <td><mat-form-field class="example-full-width">
-          <input matInput placeholder="Country" [(ngModel)] = "user.country">
+          <input matInput placeholder="Country" [(ngModel)] = "user.country" name="country">
         </mat-form-field></td>
     
     
@@ -35,15 +35,16 @@
       </tr></table>
       <p>
           <mat-form-field class="example-full-width">
-              <mat-select placeholder="Choose country">
-                <mat-option *ngFor="let food of foods" [value]="food.value">
-                  {{ food.viewValue }}
+              <mat-select placeholder="Choose country to go" [(ngModel)]="user.countryToGo" name="countryToGo">
+                <mat-option *ngFor="let item of countryToGo" [value]="item">
+                  {{ item }}
                 </mat-option>
               </mat-select>
             </mat-form-field>
       </p>
 
-      <!-- <button type="button" class="btn btn-light" (click)="onClickMe()">Join our team</button> -->
+
+      <button type="button" class="btn btn-light" (click)="signUp()">Join our team</button>
 
     </form>
     

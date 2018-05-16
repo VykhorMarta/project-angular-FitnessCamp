@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
-
+import { FormsModule } from '@angular/forms'
 
 
 import { AppComponent } from './app.component';
@@ -23,6 +23,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatSelectModule, MatOptionModule  } from '@angular/material';
+import { RegistrationService } from './services/registrationService';
 
 const appRoutes: Routes = [
 {path: 'aboutUs', component: AboutUsComponent},
@@ -58,10 +59,10 @@ const appRoutes: Routes = [
     MatSelectModule,
     MatOptionModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
-
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
-  providers: [],
+  providers: [RegistrationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
