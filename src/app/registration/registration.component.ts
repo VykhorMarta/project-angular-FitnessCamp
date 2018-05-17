@@ -34,7 +34,7 @@ export class RegistrationComponent implements OnInit {
 
   signUp() {
     console.log(this.user)
-    this.http.post ('http://localhost:3000/reservation',this.user)
+    this.http.post ('http://localhost:3000/registration', this.user)
     .subscribe(
       res => {
         console.log(res);

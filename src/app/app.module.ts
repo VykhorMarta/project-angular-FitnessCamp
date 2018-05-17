@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms'
+import { ScrollToModule } from 'ng2-scroll-to-el';
 
 
 import { AppComponent } from './app.component';
@@ -60,9 +61,11 @@ const appRoutes: Routes = [
     MatOptionModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    ScrollToModule.forRoot()
+
   ],
-  providers: [RegistrationService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
