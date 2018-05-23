@@ -34,4 +34,7 @@
     background: none;
     border: 1px solid gray;
     margin-bottom: 20px;
+    background: #00c72e;
+    color: black;
+    font-weight: bold;
 }

@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms'
 import { ScrollToModule } from 'ng2-scroll-to-el';
 
+import {Component} from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
@@ -25,6 +26,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatSelectModule, MatOptionModule  } from '@angular/material';
 import { RegistrationService } from './services/registrationService';
+import { DialogComponentComponent } from './dialog-component/dialog-component.component';
+import { DialogSwedenComponent } from './dialogs/dialog-sweden/dialog-sweden.component';
+import { DialogCroatiaComponent } from './dialogs/dialog-croatia/dialog-croatia.component';
+import { DialogSloveniaComponent } from './dialogs/dialog-slovenia/dialog-slovenia.component';
+import { DialogCappadociaComponent } from './dialogs/dialog-cappadocia/dialog-cappadocia.component';
+import { DialogAustriaComponent } from './dialogs/dialog-austria/dialog-austria.component';
+
+
 
 const appRoutes: Routes = [
 {path: 'aboutUs', component: AboutUsComponent},
@@ -48,8 +57,14 @@ const appRoutes: Routes = [
     LocationComponent,
     PriceComponent,
     FeedbacksComponent,
-    RegistrationComponent
-  ],
+    RegistrationComponent,
+    DialogComponentComponent,
+    DialogSwedenComponent,
+    DialogCroatiaComponent,
+    DialogSloveniaComponent,
+    DialogCappadociaComponent,
+    DialogAustriaComponent
+      ],
   imports: [
     BrowserModule,
     MatCardModule,
@@ -63,8 +78,9 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FormsModule,
     ScrollToModule.forRoot()
-
   ],
+  entryComponents: [DialogComponentComponent, DialogSwedenComponent],
+
   providers: [],
   bootstrap: [AppComponent]
 })

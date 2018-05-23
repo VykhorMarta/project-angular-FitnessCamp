@@ -8,7 +8,9 @@
     z-index: 100;
 }
 
-
+.nav-item{
+    cursor: pointer;
+}
 /* bootstrap */
 .navbar-default {
     border-radius: 0%;

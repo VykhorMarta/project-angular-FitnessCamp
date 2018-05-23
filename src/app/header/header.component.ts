@@ -13,8 +13,5 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  goToPrice(){
-    this.router.navigate(['price']);
-
-  }
+  
 }
