@@ -79,7 +79,13 @@ const appRoutes: Routes = [
     FormsModule,
     ScrollToModule.forRoot()
   ],
-  entryComponents: [DialogComponentComponent, DialogSwedenComponent],
+  entryComponents: [DialogComponentComponent, 
+    DialogSwedenComponent, 
+    DialogCroatiaComponent, 
+    DialogSloveniaComponent,
+    DialogCappadociaComponent,
+    DialogAustriaComponent
+  ],
 
   providers: [],
   bootstrap: [AppComponent]

@@ -3,31 +3,34 @@
     <h1 >Join our team now!</h1>
       <table class="example-full-width" cellspacing="0"><tr>
         <td><mat-form-field class="example-full-width">
-          <input matInput placeholder="First name" [(ngModel)] = "user.firstName" name="firstName">
+          <input matInput placeholder="First name" [(ngModel)] = "user.firstName" name="firstName" required
+          maxlength="30">
         </mat-form-field></td>
         <td><mat-form-field class="example-full-width">
-          <input matInput placeholder="Last Name" [(ngModel)] = "user.lastName" name="lastName">
+          <input matInput placeholder="Last Name" [(ngModel)] = "user.lastName" name="lastName" required
+          maxlength="30">
         </mat-form-field></td>
       </tr></table>
     
       <p>
         <mat-form-field class="example-full-width">
-          <textarea matInput placeholder="Email" [(ngModel)] = "user.email" name="email"></textarea>
+            <input matInput placeholder="Email" [(ngModel)] = "user.email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxlength="40">
+          <!-- <textarea matInput placeholder="Email" [(ngModel)] = "user.email" name="email"></textarea> -->
         </mat-form-field>
       </p>
     
       <table class="example-full-width" cellspacing="0"><tr>
         <td><mat-form-field class="example-full-width">
-          <input matInput placeholder="Age" [(ngModel)] = "user.age" name="age">
+          <input matInput placeholder="Age" [(ngModel)] = "user.age" name="age" required>
         </mat-form-field></td>
       </tr></table>
     
       <table class="example-full-width" cellspacing="0"><tr>
         <td><mat-form-field class="example-full-width">
-          <input matInput placeholder="City" [(ngModel)] = "user.city" name="city">
+          <input matInput placeholder="City" [(ngModel)] = "user.city" name="city" required>
         </mat-form-field></td>
         <td><mat-form-field class="example-full-width">
-          <input matInput placeholder="Country" [(ngModel)] = "user.country" name="country">
+          <input matInput placeholder="Country" [(ngModel)] = "user.country" name="country" required>
         </mat-form-field></td>
     
     
@@ -35,7 +38,7 @@
       </tr></table>
       <p>
           <mat-form-field class="example-full-width">
-              <mat-select placeholder="Choose country to go" [(ngModel)]="user.countryToGo" name="countryToGo">
+              <mat-select placeholder="Choose country to go" [(ngModel)]="user.countryToGo" name="countryToGo" required>
                 <mat-option *ngFor="let item of countryToGo" [value]="item">
                   {{ item }}
                 </mat-option>

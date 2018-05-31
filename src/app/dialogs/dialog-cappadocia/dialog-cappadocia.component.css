@@ -1,0 +1,16 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+ul{
+    margin-top: 16px;
+}
+
+.mat-dialog-actions {
+    justify-content: center;
+}
+
+.btn{
+    background:  #33cc33;
+}
